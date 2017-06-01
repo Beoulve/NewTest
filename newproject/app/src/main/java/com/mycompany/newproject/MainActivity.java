@@ -1,14 +1,11 @@
-package com.mycompany.myapp;
+package com.mycompany.newproject;
 import android.app.*;
 import android.os.*;
-import android.app.Activity;
-import android.os.Bundle;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.TextView;
-import android.view.View.OnClickListener;
+import android.view.*;
+import android.widget.*;
+import android.view.View.*;
 
-public class MainActivity extends Activity implements onClickListener
+public class MainActivity extends Activity implements OnClickListener
 {
     final Button button1 = (Button)findViewById(R.id.button1);
     final Button button2 = (Button)findViewById(R.id.button2);
@@ -22,12 +19,7 @@ public class MainActivity extends Activity implements onClickListener
         setContentView(R.layout.main);
         TextView textView1 = (TextView) findViewById(R.id.textView1);
         textView1.setText ("Next text in TextView");
-        Button button1 = (Button) findViewById(R.id.button1);
-        button1.setText ("My button");
-        button1.setEnabled (true);
-        CheckBox chb1 = (CheckBox) findViewById (R.id.chb1);
-        chb1.setChecked (true);
-
+   
     //один обработчки для всех кнопок
     button1.setOnClickListener(this);
     button2.setOnClickListener(this);
@@ -35,8 +27,7 @@ public class MainActivity extends Activity implements onClickListener
     button4.setOnClickListener(this);
     }
 
-    //проверяем, какая кнопка нажата.
-    @Override
+    //проверяем, какая кнопка нажата
     public void onClick(View v){
         switch (v.getId()){
             case R.id.button1: editText.setText("Нажата кнопка button1"); break;
