@@ -17,9 +17,10 @@
           android:orientation="vertical">   
           <Button
               android:id="@+id/button1"
-              android:layout_width="100dp"
-              android:layout_height="100dp"
-              android:text="Button1">
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:onClick="onMyClick"
+              android:text="Личный кабинет">
           </Button>
           <Button
               android:id="@+id/button2"
@@ -37,7 +38,7 @@
               android:id="@+id/button4"
               android:layout_width="100dp"
               android:layout_height="100dp"
-              android:text="Button4">
+              android:text="О программе">
           </Button>
 		  <CheckBox
 			  android:id="@+id/chb1"
