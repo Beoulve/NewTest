@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://shemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<TextView
+		android:id="@+id/pers_cab"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Личный кабинет">
+	</TextView>
+	<LinearLayout
+		android:id="@+id/LinearLayout2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<Button
+			android:id="@+id/OK"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="ОК">
+		</Button>
+		<Button
+			android:id="@+id/Cancel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Отмена">
+		</Button>
+
+
+
+	</LinearLayout>
+</LinearLayout>
